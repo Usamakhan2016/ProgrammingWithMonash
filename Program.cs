@@ -13,6 +13,37 @@ namespace ProgrammingWithMonash
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("          ");
+            Console.WriteLine("/********/");
+            Console.WriteLine("Arrays");
+
+            var number1 = new int[3];
+            number1[0] = 1;
+
+            Console.WriteLine(number1[0]);
+            Console.WriteLine(number1[1]);
+            Console.WriteLine(number1[2]);
+
+            var flags = new bool[3];
+            flags[0] = true;
+
+            Console.WriteLine(flags[0]);
+            Console.WriteLine(flags[1]);
+            Console.WriteLine(flags[2]);
+
+            var names = new string[3] {"John","Marry","Kate" };
+          
+
+            Console.WriteLine(names[0]);
+            Console.WriteLine(names[1]);
+            Console.WriteLine(names[2]);
+
+
+
+
+
+            Console.WriteLine("          ");
+            Console.WriteLine("/********/");
             Console.WriteLine("Introduction to Classes");
 
             var person = new Person();

@@ -11,8 +11,57 @@ namespace ProgrammingWithMonash
 
     class Program
     {
+        public enum ShippingMethod 
+        {
+            RegularAirMail =1,
+            RegisteredAirMail =2,
+            Express =3
+        }
         static void Main(string[] args)
         {
+
+            Console.WriteLine("          ");
+            Console.WriteLine("/********/");
+            Console.WriteLine("Enums");
+
+
+            var method = ShippingMethod.Express;
+            Console.WriteLine((int)method);
+
+            var methodId = 3;
+            Console.WriteLine((ShippingMethod)methodId);
+
+            Console.WriteLine(method.ToString());
+
+            //Parsing is converting string into any other type
+
+            var methodName = "Express";
+            var ShippingMethodName = (ShippingMethod) Enum.Parse(typeof(ShippingMethod), methodName);
+
+            Console.WriteLine("          ");
+            Console.WriteLine("/********/");
+            Console.WriteLine("Strings");
+
+            var firstName_1 = "Usama";
+            var lastName_1 = "Sakhawat";
+
+            var fullName = firstName_1 + " " + lastName_1;
+            var myFullName = string.Format("My name is {0} {1}", firstName_1, lastName_1);
+            Console.WriteLine(myFullName);
+
+            var names_1= new string[3] { "John", "Marry", "Kate" };
+            var formattedNames = string.Join(",", names_1);
+            Console.WriteLine(formattedNames);
+
+            //var text = "Hi John\nLook into the following paths\nc:\\folder1\\folder2\nc:\\folder3\\folder4";
+
+            var text = @"Hi John
+Look into the following paths
+c:\folder1\folder2
+c:\folder3\folder4";
+
+            Console.WriteLine(text);
+
             Console.WriteLine("          ");
             Console.WriteLine("/********/");
             Console.WriteLine("Arrays");

@@ -17,6 +17,11 @@ namespace ProgrammingWithMonash
             RegisteredAirMail =2,
             Express =3
         }
+
+        //public class Person 
+        //{
+        //    public int Age;
+        //}
         static void Main(string[] args)
         {
 
@@ -193,7 +198,55 @@ c:\folder3\folder4";
 
             Console.WriteLine("{0} {1}",byte.MinValue,byte.MaxValue);
             Console.WriteLine("{0} {1}", float.MinValue, float.MaxValue);
+
+
+            var a_2 = 10;
+            var b_2 = a_2;
+            b_2++;
+            Console.WriteLine(string.Format("a: {0},b: {1}",a_2,b_2));
+
+
+            var array1 = new int[3] { 1, 2, 3 };
+            var array2 = array1;
+            array2[0] = 0;
+            Console.WriteLine(string.Format("array1[0]: {0},array2[0]: {1}", array1[0], array2[0]));
+
+
+            Console.WriteLine("          ");
+            Console.WriteLine("/********/");
+            Console.WriteLine("Reference Type");
+
+            var num = 1;
+            Increment(num);
+            Console.WriteLine(num);
+
+            person.Age = 20;
+            MakeOld(person);
+            Console.WriteLine(person.Age);
+
+
+
+
+
+
+
         }
+
+        public static void Increment(int number)
+        {
+            number += 10;
+
+        }
+
+        public static void MakeOld(Person person)
+        {
+            person.Age += 10;
+
+        }
+
     }
+
+   
+
 }
 

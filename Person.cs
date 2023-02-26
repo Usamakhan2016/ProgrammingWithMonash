@@ -17,7 +17,12 @@ namespace ProgrammingWithMonash
             Console.WriteLine("My name is "+ FirstName + " " + LastName);
         }
 
-
+        public void DisplaySpace(string value)
+        {
+            Console.WriteLine("----------------------------");
+            Console.WriteLine("New Topic: "+ value);
+            Console.WriteLine("----------------------------");
+        }
     }
 }
 

@@ -428,11 +428,11 @@ c:\folder3\folder4";
 
 
             var random = new Random();
-            
-            for(var k = 0; k < 10; k++) 
+
+            for (var k = 0; k < 10; k++)
             {
                 //because a=97 to z=122
-                Console.Write((char)('a' + random.Next(0,26)));
+                Console.Write((char)('a' + random.Next(0, 26)));
             }
             Console.WriteLine();
 
@@ -446,6 +446,109 @@ c:\folder3\folder4";
 
             var password = new string(buffer);
             Console.WriteLine(password);
+
+
+            person.DisplaySpace("Loops First Exercise");
+
+            var counter = 0;
+
+            for (var k1 = 1; k1 <= 100; k1++)
+            {
+                if (k1 % 3 == 0)
+                {
+                    counter += 1;
+                }
+            }
+
+            Console.WriteLine(counter);
+
+            person.DisplaySpace("Loops Second Exercise");
+
+            var resultNum = 0;
+
+            while (true)
+            {
+                Console.WriteLine("Enter a number");
+                var inputNumber1 = Console.ReadLine();
+
+                if (inputNumber1 == "ok")
+                {
+                    break;
+                }
+                else
+                {
+                    resultNum += int.Parse(inputNumber1);
+                }
+
+
+            }
+
+            Console.WriteLine(resultNum);
+
+
+            person.DisplaySpace("Loops Third Exercise");
+
+
+
+            Console.WriteLine("Enter a number");
+            var factNum = int.Parse(Console.ReadLine());
+
+            Program program = new Program();
+
+            double fact = program.Factorial(factNum);
+            Console.WriteLine(factNum + " != " + fact);
+
+
+            person.DisplaySpace("Loops Fourth Exercise");
+
+            for (var k2 = 1; k2 <= 4; k2++)
+            {
+                var randNum = random.Next(1, 10);
+
+                Console.WriteLine("Enter Number");
+                var userNum = int.Parse(Console.ReadLine());
+
+                if (randNum == userNum)
+                {
+                    Console.WriteLine("You Won");
+                    Console.WriteLine(randNum);
+                }
+                else
+                {
+                    Console.WriteLine("You Lost");
+                }
+
+
+            }
+
+            person.DisplaySpace("Loops Fiveth Exercise");
+
+            Console.WriteLine("Enter a series of number,seperated by commas");
+            var userInput = Console.ReadLine();
+            var userNumArray = userInput.Split(',');
+
+            var numArray = new int[] { 5, 3, 8, 1, 4 };
+
+            var max = Convert.ToInt32(userNumArray[0]) ;
+
+            foreach(var numArr in userNumArray) 
+            {
+                var numArr1 = Convert.ToInt32(numArr);
+
+                if(numArr1 > max) 
+                {
+                    max = numArr1;
+                }
+            }
+
+            Console.WriteLine("Max number is "+max);
+
+
+            Console.ReadKey();
+
+
+
+
 
 
 
@@ -463,7 +566,19 @@ c:\folder3\folder4";
 
         }
 
-       
+
+        public double Factorial(int number)
+        {
+            if (number == 0)
+            {
+                return 1;
+            }
+            else
+            {
+                return number * Factorial(number - 1);
+            }
+        }
+
 
     }
 

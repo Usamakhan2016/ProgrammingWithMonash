@@ -529,22 +529,41 @@ c:\folder3\folder4";
 
             var numArray = new int[] { 5, 3, 8, 1, 4 };
 
-            var max = Convert.ToInt32(userNumArray[0]) ;
+            var max = Convert.ToInt32(userNumArray[0]);
 
-            foreach(var numArr in userNumArray) 
+            foreach (var numArr in userNumArray)
             {
                 var numArr1 = Convert.ToInt32(numArr);
 
-                if(numArr1 > max) 
+                if (numArr1 > max)
                 {
                     max = numArr1;
                 }
             }
 
-            Console.WriteLine("Max number is "+max);
+            Console.WriteLine("Max number is " + max);
 
+            person.DisplaySpace("Arrays Concept");
 
-            Console.ReadKey();
+            ArraysClass arraysClass = new ArraysClass();
+
+            arraysClass.ArrayConceptes();
+
+            person.DisplaySpace("Lists");
+
+            ListClass listClass = new ListClass();
+            listClass.displayList();
+
+            arraysClass.ArrayExercise();
+            arraysClass.secondArrEx();
+
+            arraysClass.thirdArrEx();
+
+            arraysClass.fourthArrEx();
+
+            arraysClass.fifthArrEx();
+
+           // Console.ReadKey();
 
 
 

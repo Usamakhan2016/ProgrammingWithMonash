@@ -232,27 +232,12 @@ c:\folder3\folder4";
             MakeOld(person);
             Console.WriteLine(person.Age);
 
+            
+
             person.DisplaySpace("ForLoop");
 
-            int hour = 10;
-            if (hour > 0 && hour < 12)
-            {
-                Console.WriteLine("It's morning.");
-            }
-            else if (hour >= 12 && hour < 18)
-            {
-                Console.WriteLine("It's afternoon.");
-            }
-            else 
-            {
-                Console.WriteLine("It'evening.");
-            }
-
-            bool isGoldCustomer = true;
-
-            float price = (isGoldCustomer) ? 19.95f : 29.95f;
-
-            Console.WriteLine(price);
+            IFElseClass.DisplayBasicCode();
+            
 
 
             person.DisplaySpace("Switch");
@@ -275,293 +260,224 @@ c:\folder3\folder4";
             }
 
 
-            person.DisplaySpace("First Exercise");
-            Console.WriteLine("Enter number ");
-            int inputNum = Convert.ToInt32(Console.ReadLine());
+            // IFElseClass.DisplaySwitchCode();
 
-            if (inputNum >= 1 && inputNum <= 10)
-            {
-                Console.WriteLine("Valid");
-            }
-            else
-                Console.WriteLine("InValid");
 
-            person.DisplaySpace("Second Exercise");
+            //for (i = 1; i <= 10; i++)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
 
-            Console.WriteLine("Enter First number ");
-            int FirstNum = Convert.ToInt32(Console.ReadLine());
+            //}
 
-            Console.WriteLine("Enter Second number ");
-            int SecondNum = Convert.ToInt32(Console.ReadLine());
-
-            if (FirstNum > SecondNum)
-            {
-                Console.WriteLine(string.Format("Maximum Number {0}", FirstNum));
-            }
-            else if (SecondNum > FirstNum)
-            {
-                Console.WriteLine(string.Format("Maximum Number {0}", SecondNum));
-            }
-            else { Console.WriteLine("Both number are equal"); }
-
-
-            person.DisplaySpace("Third Exercise");
-
-            Console.WriteLine("Enter Width of Image ");
-            int width = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Enter Height of Image ");
-            int height = Convert.ToInt32(Console.ReadLine());
+            //for (i = 10; i >= 1; i--)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
 
-            if (width > height)
-            {
-                Console.WriteLine("Image is Landscape");
-            }
-            else if (height > width)
-            {
-                Console.WriteLine("Image is Portrait");
-            }
-            else
-                Console.WriteLine("Image is Normal");
+            //}
 
+            //var name = "John Smith";
 
-            person.DisplaySpace("Fourth Exercise");
+            //for (i = 0; i < name.Length; i++)
+            //{
+            //    Console.WriteLine(name[i]);
+            //}
 
-            Console.WriteLine("Enter Speed Limit ");
-            int speedLimit = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter Speed of Car ");
-            int speedCar = int.Parse(Console.ReadLine());
 
-            if (speedCar <= speedLimit)
-            {
-                Console.WriteLine("OK");
-            }
-            else
-            {
-                int demeritPoints = (speedCar - speedLimit) / 5;
-                Console.WriteLine("Demerits Points: " + demeritPoints);
+            //foreach (var character_1 in name)
+            //{
+            //    Console.WriteLine(character_1);
+            //}
 
-                if (demeritPoints > 12)
-                {
-                    Console.WriteLine("License Suspended.");
-                }
-            }
+            //var newNumbers = new int[] { 0, 1, 2, 3, 4, 5 };
 
+            //foreach (var newNumber in newNumbers)
+            //{
+            //    Console.WriteLine(newNumber);
+            //}
 
-            for (i = 1; i <= 10; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    Console.WriteLine(i);
-                }
+            //var j = 0;
+            //while (j <= 10)
+            //{
+            //    if (j % 2 == 0)
+            //    {
+            //        Console.WriteLine(j);
+            //    }
+            //    j++;
+            //}
 
-            }
 
-            for (i = 10; i >= 1; i--)
-            {
-                if (i % 2 == 0)
-                {
-                    Console.WriteLine(i);
-                }
+            //while (true)
+            //{
+            //    Console.WriteLine("Type Your Name: ");
+            //    var inputName = Console.ReadLine();
 
-            }
+            //    if (String.IsNullOrWhiteSpace(inputName))
+            //        break;
 
-            var name = "John Smith";
+            //    Console.WriteLine("@Echo: " + inputName);
+            //}
 
-            for (i = 0; i < name.Length; i++)
-            {
-                Console.WriteLine(name[i]);
-            }
 
+            //while (true)
+            //{
+            //    Console.WriteLine("Type Your Name: ");
+            //    var inputName = Console.ReadLine();
 
+            //    if (!String.IsNullOrWhiteSpace(inputName))
+            //    {
+            //        Console.WriteLine("@Echo: " + inputName);
+            //        continue;
+            //    }
+            //    break;
 
-            foreach (var character_1 in name)
-            {
-                Console.WriteLine(character_1);
-            }
 
-            var newNumbers = new int[] { 0, 1, 2, 3, 4, 5 };
+            //}
 
-            foreach (var newNumber in newNumbers)
-            {
-                Console.WriteLine(newNumber);
-            }
 
-            var j = 0;
-            while (j <= 10)
-            {
-                if (j % 2 == 0)
-                {
-                    Console.WriteLine(j);
-                }
-                j++;
-            }
+            //var random = new Random();
 
+            //for (var k = 0; k < 10; k++)
+            //{
+            //    //because a=97 to z=122
+            //    Console.Write((char)('a' + random.Next(0, 26)));
+            //}
+            //Console.WriteLine();
 
-            while (true)
-            {
-                Console.WriteLine("Type Your Name: ");
-                var inputName = Console.ReadLine();
+            //const int passwordLength = 10;
+            //var buffer = new char[passwordLength];
+            //for (var k = 0; k < passwordLength; k++)
+            //{
+            //    //because a=97 to z=122
+            //    buffer[k] = (char)('a' + random.Next(0, 26));
+            //}
 
-                if (String.IsNullOrWhiteSpace(inputName))
-                    break;
+            //var password = new string(buffer);
+            //Console.WriteLine(password);
 
-                Console.WriteLine("@Echo: " + inputName);
-            }
 
+            //person.DisplaySpace("Loops First Exercise");
 
-            while (true)
-            {
-                Console.WriteLine("Type Your Name: ");
-                var inputName = Console.ReadLine();
+            //var counter = 0;
 
-                if (!String.IsNullOrWhiteSpace(inputName))
-                {
-                    Console.WriteLine("@Echo: " + inputName);
-                    continue;
-                }
-                break;
+            //for (var k1 = 1; k1 <= 100; k1++)
+            //{
+            //    if (k1 % 3 == 0)
+            //    {
+            //        counter += 1;
+            //    }
+            //}
 
+            //Console.WriteLine(counter);
 
-            }
+            //person.DisplaySpace("Loops Second Exercise");
 
+            //var resultNum = 0;
 
-            var random = new Random();
+            //while (true)
+            //{
+            //    Console.WriteLine("Enter a number");
+            //    var inputNumber1 = Console.ReadLine();
 
-            for (var k = 0; k < 10; k++)
-            {
-                //because a=97 to z=122
-                Console.Write((char)('a' + random.Next(0, 26)));
-            }
-            Console.WriteLine();
+            //    if (inputNumber1 == "ok")
+            //    {
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        resultNum += int.Parse(inputNumber1);
+            //    }
 
-            const int passwordLength = 10;
-            var buffer = new char[passwordLength];
-            for (var k = 0; k < passwordLength; k++)
-            {
-                //because a=97 to z=122
-                buffer[k] = (char)('a' + random.Next(0, 26));
-            }
 
-            var password = new string(buffer);
-            Console.WriteLine(password);
+            //}
 
+            //Console.WriteLine(resultNum);
 
-            person.DisplaySpace("Loops First Exercise");
 
-            var counter = 0;
+            //person.DisplaySpace("Loops Third Exercise");
 
-            for (var k1 = 1; k1 <= 100; k1++)
-            {
-                if (k1 % 3 == 0)
-                {
-                    counter += 1;
-                }
-            }
 
-            Console.WriteLine(counter);
 
-            person.DisplaySpace("Loops Second Exercise");
+            //Console.WriteLine("Enter a number");
+            //var factNum = int.Parse(Console.ReadLine());
 
-            var resultNum = 0;
+            //Program program = new Program();
 
-            while (true)
-            {
-                Console.WriteLine("Enter a number");
-                var inputNumber1 = Console.ReadLine();
+            //double fact = program.Factorial(factNum);
+            //Console.WriteLine(factNum + " != " + fact);
 
-                if (inputNumber1 == "ok")
-                {
-                    break;
-                }
-                else
-                {
-                    resultNum += int.Parse(inputNumber1);
-                }
 
+            //person.DisplaySpace("Loops Fourth Exercise");
 
-            }
+            //for (var k2 = 1; k2 <= 4; k2++)
+            //{
+            //    var randNum = random.Next(1, 10);
 
-            Console.WriteLine(resultNum);
+            //    Console.WriteLine("Enter Number");
+            //    var userNum = int.Parse(Console.ReadLine());
 
+            //    if (randNum == userNum)
+            //    {
+            //        Console.WriteLine("You Won");
+            //        Console.WriteLine(randNum);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("You Lost");
+            //    }
 
-            person.DisplaySpace("Loops Third Exercise");
 
+            //}
 
+            //person.DisplaySpace("Loops Fiveth Exercise");
 
-            Console.WriteLine("Enter a number");
-            var factNum = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter a series of number,seperated by commas");
+            //var userInput = Console.ReadLine();
+            //var userNumArray = userInput.Split(',');
 
-            Program program = new Program();
+            //var numArray = new int[] { 5, 3, 8, 1, 4 };
 
-            double fact = program.Factorial(factNum);
-            Console.WriteLine(factNum + " != " + fact);
+            //var max = Convert.ToInt32(userNumArray[0]);
 
+            //foreach (var numArr in userNumArray)
+            //{
+            //    var numArr1 = Convert.ToInt32(numArr);
 
-            person.DisplaySpace("Loops Fourth Exercise");
+            //    if (numArr1 > max)
+            //    {
+            //        max = numArr1;
+            //    }
+            //}
 
-            for (var k2 = 1; k2 <= 4; k2++)
-            {
-                var randNum = random.Next(1, 10);
+            //Console.WriteLine("Max number is " + max);
 
-                Console.WriteLine("Enter Number");
-                var userNum = int.Parse(Console.ReadLine());
+            //person.DisplaySpace("Arrays Concept");
 
-                if (randNum == userNum)
-                {
-                    Console.WriteLine("You Won");
-                    Console.WriteLine(randNum);
-                }
-                else
-                {
-                    Console.WriteLine("You Lost");
-                }
+            //ArraysClass arraysClass = new ArraysClass();
 
+            //arraysClass.ArrayConceptes();
 
-            }
+            //person.DisplaySpace("Lists");
 
-            person.DisplaySpace("Loops Fiveth Exercise");
+            //ListClass listClass = new ListClass();
+            //listClass.displayList();
 
-            Console.WriteLine("Enter a series of number,seperated by commas");
-            var userInput = Console.ReadLine();
-            var userNumArray = userInput.Split(',');
+            //arraysClass.ArrayExercise();
+            //arraysClass.secondArrEx();
 
-            var numArray = new int[] { 5, 3, 8, 1, 4 };
+            //arraysClass.thirdArrEx();
 
-            var max = Convert.ToInt32(userNumArray[0]);
+            //arraysClass.fourthArrEx();
 
-            foreach (var numArr in userNumArray)
-            {
-                var numArr1 = Convert.ToInt32(numArr);
+            //arraysClass.fifthArrEx();
 
-                if (numArr1 > max)
-                {
-                    max = numArr1;
-                }
-            }
-
-            Console.WriteLine("Max number is " + max);
-
-            person.DisplaySpace("Arrays Concept");
-
-            ArraysClass arraysClass = new ArraysClass();
-
-            arraysClass.ArrayConceptes();
-
-            person.DisplaySpace("Lists");
-
-            ListClass listClass = new ListClass();
-            listClass.displayList();
-
-            arraysClass.ArrayExercise();
-            arraysClass.secondArrEx();
-
-            arraysClass.thirdArrEx();
-
-            arraysClass.fourthArrEx();
-
-            arraysClass.fifthArrEx();
+            DateTimeClass.DisplayDateTime();        
 
            // Console.ReadKey();
 

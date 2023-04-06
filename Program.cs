@@ -261,224 +261,224 @@ c:\folder3\folder4";
             }
 
 
-            // IFElseClass.DisplaySwitchCode();
+            IFElseClass.DisplaySwitchCode();
 
 
-            //for (i = 1; i <= 10; i++)
-            //{
-            //    if (i % 2 == 0)
-            //    {
-            //        Console.WriteLine(i);
-            //    }
+            for (i = 1; i <= 10; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
 
-            //}
+            }
 
-            //for (i = 10; i >= 1; i--)
-            //{
-            //    if (i % 2 == 0)
-            //    {
-            //        Console.WriteLine(i);
-            //    }
+            for (i = 10; i >= 1; i--)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
 
-            //}
+            }
 
-            //var name = "John Smith";
+            var name = "John Smith";
 
-            //for (i = 0; i < name.Length; i++)
-            //{
-            //    Console.WriteLine(name[i]);
-            //}
+            for (i = 0; i < name.Length; i++)
+            {
+                Console.WriteLine(name[i]);
+            }
 
 
 
-            //foreach (var character_1 in name)
-            //{
-            //    Console.WriteLine(character_1);
-            //}
+            foreach (var character_1 in name)
+            {
+                Console.WriteLine(character_1);
+            }
 
-            //var newNumbers = new int[] { 0, 1, 2, 3, 4, 5 };
+            var newNumbers = new int[] { 0, 1, 2, 3, 4, 5 };
 
-            //foreach (var newNumber in newNumbers)
-            //{
-            //    Console.WriteLine(newNumber);
-            //}
+            foreach (var newNumber in newNumbers)
+            {
+                Console.WriteLine(newNumber);
+            }
 
-            //var j = 0;
-            //while (j <= 10)
-            //{
-            //    if (j % 2 == 0)
-            //    {
-            //        Console.WriteLine(j);
-            //    }
-            //    j++;
-            //}
+            var j = 0;
+            while (j <= 10)
+            {
+                if (j % 2 == 0)
+                {
+                    Console.WriteLine(j);
+                }
+                j++;
+            }
 
 
-            //while (true)
-            //{
-            //    Console.WriteLine("Type Your Name: ");
-            //    var inputName = Console.ReadLine();
+            while (true)
+            {
+                Console.WriteLine("Type Your Name: ");
+                var inputName = Console.ReadLine();
 
-            //    if (String.IsNullOrWhiteSpace(inputName))
-            //        break;
+                if (String.IsNullOrWhiteSpace(inputName))
+                    break;
 
-            //    Console.WriteLine("@Echo: " + inputName);
-            //}
+                Console.WriteLine("@Echo: " + inputName);
+            }
 
 
-            //while (true)
-            //{
-            //    Console.WriteLine("Type Your Name: ");
-            //    var inputName = Console.ReadLine();
+            while (true)
+            {
+                Console.WriteLine("Type Your Name: ");
+                var inputName = Console.ReadLine();
 
-            //    if (!String.IsNullOrWhiteSpace(inputName))
-            //    {
-            //        Console.WriteLine("@Echo: " + inputName);
-            //        continue;
-            //    }
-            //    break;
+                if (!String.IsNullOrWhiteSpace(inputName))
+                {
+                    Console.WriteLine("@Echo: " + inputName);
+                    continue;
+                }
+                break;
 
 
-            //}
+            }
 
 
-            //var random = new Random();
+            var random = new Random();
 
-            //for (var k = 0; k < 10; k++)
-            //{
-            //    //because a=97 to z=122
-            //    Console.Write((char)('a' + random.Next(0, 26)));
-            //}
-            //Console.WriteLine();
+            for (var k = 0; k < 10; k++)
+            {
+                //because a=97 to z=122
+                Console.Write((char)('a' + random.Next(0, 26)));
+            }
+            Console.WriteLine();
 
-            //const int passwordLength = 10;
-            //var buffer = new char[passwordLength];
-            //for (var k = 0; k < passwordLength; k++)
-            //{
-            //    //because a=97 to z=122
-            //    buffer[k] = (char)('a' + random.Next(0, 26));
-            //}
+            const int passwordLength = 10;
+            var buffer = new char[passwordLength];
+            for (var k = 0; k < passwordLength; k++)
+            {
+                //because a=97 to z=122
+                buffer[k] = (char)('a' + random.Next(0, 26));
+            }
 
-            //var password = new string(buffer);
-            //Console.WriteLine(password);
+            var password = new string(buffer);
+            Console.WriteLine(password);
 
 
-            //person.DisplaySpace("Loops First Exercise");
+            person.DisplaySpace("Loops First Exercise");
 
-            //var counter = 0;
+            var counter = 0;
 
-            //for (var k1 = 1; k1 <= 100; k1++)
-            //{
-            //    if (k1 % 3 == 0)
-            //    {
-            //        counter += 1;
-            //    }
-            //}
+            for (var k1 = 1; k1 <= 100; k1++)
+            {
+                if (k1 % 3 == 0)
+                {
+                    counter += 1;
+                }
+            }
 
-            //Console.WriteLine(counter);
+            Console.WriteLine(counter);
 
-            //person.DisplaySpace("Loops Second Exercise");
+            person.DisplaySpace("Loops Second Exercise");
 
-            //var resultNum = 0;
+            var resultNum = 0;
 
-            //while (true)
-            //{
-            //    Console.WriteLine("Enter a number");
-            //    var inputNumber1 = Console.ReadLine();
+            while (true)
+            {
+                Console.WriteLine("Enter a number");
+                var inputNumber1 = Console.ReadLine();
 
-            //    if (inputNumber1 == "ok")
-            //    {
-            //        break;
-            //    }
-            //    else
-            //    {
-            //        resultNum += int.Parse(inputNumber1);
-            //    }
+                if (inputNumber1 == "ok")
+                {
+                    break;
+                }
+                else
+                {
+                    resultNum += int.Parse(inputNumber1);
+                }
 
 
-            //}
+            }
 
-            //Console.WriteLine(resultNum);
+            Console.WriteLine(resultNum);
 
 
-            //person.DisplaySpace("Loops Third Exercise");
+            person.DisplaySpace("Loops Third Exercise");
 
 
 
-            //Console.WriteLine("Enter a number");
-            //var factNum = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter a number");
+            var factNum = int.Parse(Console.ReadLine());
 
-            //Program program = new Program();
+            Program program = new Program();
 
-            //double fact = program.Factorial(factNum);
-            //Console.WriteLine(factNum + " != " + fact);
+            double fact = program.Factorial(factNum);
+            Console.WriteLine(factNum + " != " + fact);
 
 
-            //person.DisplaySpace("Loops Fourth Exercise");
+            person.DisplaySpace("Loops Fourth Exercise");
 
-            //for (var k2 = 1; k2 <= 4; k2++)
-            //{
-            //    var randNum = random.Next(1, 10);
+            for (var k2 = 1; k2 <= 4; k2++)
+            {
+                var randNum = random.Next(1, 10);
 
-            //    Console.WriteLine("Enter Number");
-            //    var userNum = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter Number");
+                var userNum = int.Parse(Console.ReadLine());
 
-            //    if (randNum == userNum)
-            //    {
-            //        Console.WriteLine("You Won");
-            //        Console.WriteLine(randNum);
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("You Lost");
-            //    }
+                if (randNum == userNum)
+                {
+                    Console.WriteLine("You Won");
+                    Console.WriteLine(randNum);
+                }
+                else
+                {
+                    Console.WriteLine("You Lost");
+                }
 
 
-            //}
+            }
 
-            //person.DisplaySpace("Loops Fiveth Exercise");
+            person.DisplaySpace("Loops Fiveth Exercise");
 
-            //Console.WriteLine("Enter a series of number,seperated by commas");
-            //var userInput = Console.ReadLine();
-            //var userNumArray = userInput.Split(',');
+            Console.WriteLine("Enter a series of number,seperated by commas");
+            var userInput = Console.ReadLine();
+            var userNumArray = userInput.Split(',');
 
-            //var numArray = new int[] { 5, 3, 8, 1, 4 };
+            var numArray = new int[] { 5, 3, 8, 1, 4 };
 
-            //var max = Convert.ToInt32(userNumArray[0]);
+            var max = Convert.ToInt32(userNumArray[0]);
 
-            //foreach (var numArr in userNumArray)
-            //{
-            //    var numArr1 = Convert.ToInt32(numArr);
+            foreach (var numArr in userNumArray)
+            {
+                var numArr1 = Convert.ToInt32(numArr);
 
-            //    if (numArr1 > max)
-            //    {
-            //        max = numArr1;
-            //    }
-            //}
+                if (numArr1 > max)
+                {
+                    max = numArr1;
+                }
+            }
 
-            //Console.WriteLine("Max number is " + max);
+            Console.WriteLine("Max number is " + max);
 
-            //person.DisplaySpace("Arrays Concept");
+            person.DisplaySpace("Arrays Concept");
 
-            //ArraysClass arraysClass = new ArraysClass();
+            ArraysClass arraysClass = new ArraysClass();
 
-            //arraysClass.ArrayConceptes();
+            arraysClass.ArrayConceptes();
 
-            //person.DisplaySpace("Lists");
+            person.DisplaySpace("Lists");
 
-            //ListClass listClass = new ListClass();
-            //listClass.displayList();
+            ListClass listClass = new ListClass();
+            listClass.displayList();
 
-            //arraysClass.ArrayExercise();
-            //arraysClass.secondArrEx();
+            arraysClass.ArrayExercise();
+            arraysClass.secondArrEx();
 
-            //arraysClass.thirdArrEx();
+            arraysClass.thirdArrEx();
 
-            //arraysClass.fourthArrEx();
+            arraysClass.fourthArrEx();
 
-            //arraysClass.fifthArrEx();
+            arraysClass.fifthArrEx();
 
-            //DateTimeClass.DisplayDateTime(); 
+            DateTimeClass.DisplayDateTime();
 
             StringClass.displayStringConcepts();
 
@@ -502,10 +502,10 @@ c:\folder3\folder4";
             Console.WriteLine(builder);
             Console.WriteLine("First Char: " + builder[0]);
 
-            //StringExcercise.StringExcercisefun();
-            //StringExcercise.StrExc2();
-            //StringExcercise.StrExc3();
-            //StringExcercise.StrExc4();
+            StringExcercise.StringExcercisefun();
+            StringExcercise.StrExc2();
+            StringExcercise.StrExc3();
+            StringExcercise.StrExc4();
             StringExcercise.strExc5();
 
             // Console.ReadKey();

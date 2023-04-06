@@ -1,5 +1,6 @@
 ﻿using ProgrammingWithMonash.Math;
 using System;
+using System.Text;
 //using System.Collections.Generic;
 //using System.Linq;
 //using System.Text;
@@ -477,9 +478,37 @@ c:\folder3\folder4";
 
             //arraysClass.fifthArrEx();
 
-            DateTimeClass.DisplayDateTime();        
+            //DateTimeClass.DisplayDateTime(); 
 
-           // Console.ReadKey();
+            StringClass.displayStringConcepts();
+
+            var sentence = "This is going to be a really really really really really really long text. ";
+            var summary = StringClass.SummerizeText(sentence,25);
+            Console.WriteLine(summary);
+
+            var builder = new StringBuilder("Hello World");
+            builder.AppendLine()
+                  .Append('_', 10)
+                  .AppendLine()
+                  .Append("Header")
+                  .AppendLine()
+                  .Append('_', 10);
+
+            builder.Replace('_', '+');
+
+            builder.Remove(0,6);
+            builder.Insert(0, new string('_', 10));
+
+            Console.WriteLine(builder);
+            Console.WriteLine("First Char: " + builder[0]);
+
+            //StringExcercise.StringExcercisefun();
+            //StringExcercise.StrExc2();
+            //StringExcercise.StrExc3();
+            //StringExcercise.StrExc4();
+            StringExcercise.strExc5();
+
+            // Console.ReadKey();
 
 
 
